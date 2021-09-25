@@ -12,12 +12,19 @@
     <title>Online Image Editor</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-info mb-5">
-      <div class="container">
+    <nav style="background-color: black" class="row navbar navbar-dark mb-5">
+      <div class="container col-md-11">
         <a href="#" class="navbar-brand"
-          >Image Filter<sub style="font-size: x-small"
+          >Image Editor<sub style="font-size: x-small"
             >Blessing Tayedzerwa</sub
           ></a
+        >
+      </div>
+      <div class="container col-md float-right">
+        <a
+          href="https://www.blessingtayedzerwa.pro/contact.html"
+          class="btn btn-success btn-sm"
+          >Contact Me</a
         >
       </div>
     </nav>
@@ -25,25 +32,43 @@
       <div class="row">
         <div class="col-md-8 m-auto">
           <div class="custom-file mb-3">
-            <input type="file" class="custom-file-input" id="upload-file" />
-            <label for="upload-file" class="custom-file-label"
+            <input
+              type="file"
+              class="custom-file-input"
+              id="upload-file"
+              style="background-color: black"
+            />
+            <label
+              style="background-color: black"
+              for="upload-file"
+              class="custom-file-label"
               >Choose Image</label
             >
           </div>
-          <canvas id="canvas"></canvas>
+          <canvas id="canvas" style="background-color: black"></canvas>
 
           <h4 class="text-center my-3">Filters</h4>
 
           <div class="row my-4 text-center">
             <div class="col-md-3">
               <div class="btn-group btn-group-sm">
-                <button class="filter-btn brightness-remove btn btn-info">
+                <button
+                  style="background-color: black"
+                  class="filter-btn brightness-remove btn btn-info"
+                >
                   -
                 </button>
-                <button class="btn btn-secondary btn-disabled" disabled>
+                <button
+                  style="background-color: black"
+                  class="btn btn-secondary btn-disabled"
+                  disabled
+                >
                   Brightness
                 </button>
-                <button class="filter-btn brightness-add btn btn-info">
+                <button
+                  style="background-color: black"
+                  class="filter-btn brightness-add btn btn-info"
+                >
                   +
                 </button>
               </div>
@@ -51,25 +76,23 @@
 
             <div class="col-md-3">
               <div class="btn-group btn-group-sm">
-                <button class="filter-btn contrast-remove btn btn-info">
+                <button
+                  style="background-color: black"
+                  class="filter-btn contrast-remove btn btn-info"
+                >
                   -
                 </button>
-                <button class="btn btn-secondary btn-disabled" disabled>
+                <button
+                  style="background-color: black"
+                  class="btn btn-secondary btn-disabled"
+                  disabled
+                >
                   Contrast
                 </button>
-                <button class="filter-btn contrast-add btn btn-info">+</button>
-              </div>
-            </div>
-
-            <div class="col-md-3">
-              <div class="btn-group btn-group-sm">
-                <button class="filter-btn saturation-remove btn btn-info">
-                  -
-                </button>
-                <button class="btn btn-secondary btn-disabled" disabled>
-                  Saturation
-                </button>
-                <button class="filter-btn saturation-add btn btn-info">
+                <button
+                  style="background-color: black"
+                  class="filter-btn contrast-add btn btn-info"
+                >
                   +
                 </button>
               </div>
@@ -77,13 +100,49 @@
 
             <div class="col-md-3">
               <div class="btn-group btn-group-sm">
-                <button class="filter-btn vibrance-remove btn btn-info">
+                <button
+                  style="background-color: black"
+                  class="filter-btn saturation-remove btn btn-info"
+                >
                   -
                 </button>
-                <button class="btn btn-secondary btn-disabled" disabled>
+                <button
+                  style="background-color: black"
+                  class="btn btn-secondary btn-disabled"
+                  disabled
+                >
+                  Saturation
+                </button>
+                <button
+                  style="background-color: black"
+                  class="filter-btn saturation-add btn btn-info"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <div class="btn-group btn-group-sm">
+                <button
+                  style="background-color: black"
+                  class="filter-btn vibrance-remove btn btn-info"
+                >
+                  -
+                </button>
+                <button
+                  style="background-color: black"
+                  class="btn btn-secondary btn-disabled"
+                  disabled
+                >
                   Vibrance
                 </button>
-                <button class="filter-btn vibrance-add btn btn-info">+</button>
+                <button
+                  style="background-color: black"
+                  class="filter-btn vibrance-add btn btn-info"
+                >
+                  +
+                </button>
               </div>
             </div>
           </div>
@@ -93,22 +152,34 @@
 
           <div class="row mb-3">
             <div class="col-md-3">
-              <button class="filter-btn vintage-add btn btn-dark btn-block">
+              <button
+                style="background-color: black"
+                class="filter-btn vintage-add btn btn-dark btn-block"
+              >
                 Vintage
               </button>
             </div>
             <div class="col-md-3">
-              <button class="filter-btn lomo-add btn btn-dark btn-block">
+              <button
+                style="background-color: black"
+                class="filter-btn lomo-add btn btn-dark btn-block"
+              >
                 Lomo
               </button>
             </div>
             <div class="col-md-3">
-              <button class="filter-btn clarity-add btn btn-dark btn-block">
+              <button
+                style="background-color: black"
+                class="filter-btn clarity-add btn btn-dark btn-block"
+              >
                 Clarity
               </button>
             </div>
             <div class="col-md-3">
-              <button class="filter-btn sincity-add btn btn-dark btn-block">
+              <button
+                style="background-color: black"
+                class="filter-btn sincity-add btn btn-dark btn-block"
+              >
                 Sin City
               </button>
             </div>
@@ -117,23 +188,33 @@
           <div class="row">
             <div class="col-md-3">
               <button
+                style="background-color: black"
                 class="filter-btn crossprocess-add btn btn-dark btn-block"
               >
                 Cross Process
               </button>
             </div>
             <div class="col-md-3">
-              <button class="filter-btn pinhole-add btn btn-dark btn-block">
+              <button
+                style="background-color: black"
+                class="filter-btn pinhole-add btn btn-dark btn-block"
+              >
                 Pinhole
               </button>
             </div>
             <div class="col-md-3">
-              <button class="filter-btn nostalgia-add btn btn-dark btn-block">
+              <button
+                style="background-color: black"
+                class="filter-btn nostalgia-add btn btn-dark btn-block"
+              >
                 Nostalgia
               </button>
             </div>
             <div class="col-md-3">
-              <button class="filter-btn hermajesty-add btn btn-dark btn-block">
+              <button
+                style="background-color: black"
+                class="filter-btn hermajesty-add btn btn-dark btn-block"
+              >
                 Her Majesty
               </button>
             </div>
