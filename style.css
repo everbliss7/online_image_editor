@@ -1,6 +1,6 @@
 html, body {
   max-width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 canvas {
         margin: auto;
