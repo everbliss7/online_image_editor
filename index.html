@@ -9,11 +9,42 @@
       rel="stylesheet"
       href="https://bootswatch.com/4/flatly/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="bootstrap.min.css" />
     <title>Online Image Editor</title>
   </head>
   <body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          >Image Editor<sub style="font-size: x-small"
+            >Blessing Tayedzerwa</sub
+          ></a
+        >
+             
+          <ul class="navbar-nav ms-md-auto">
+            <li class="nav-item">
+              <a
+                target="_blank"
+                rel="noopener"
+                class="nav-link"
+                href="https://github.com/everbliss7"
+                ><i style="color: white;" class="fab fa-github"></i> GitHub</a >
+            </li>
+            <li class="nav-item">
+              <a
+                target="_blank"
+                rel="noopener"
+                class="nav-link"
+                href="https://twitter.com/everbliss7"
+                ><i class="fa fa-twitter"></i> Twitter</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <nav style="background-color: black" class="row navbar navbar-dark mb-5">
-      <div class="container col-md-11">
+      <!-- <div class="container col-md-11">
         <a href="#" class="navbar-brand"
           >Image Editor<sub style="font-size: x-small"
             >Blessing Tayedzerwa</sub
@@ -26,9 +57,9 @@
           class="btn btn-success btn-sm"
           >Contact Me</a
         >
-      </div>
+      </div> -->
     </nav>
-    <div class="container">
+    <div class="container mb-5" style="font-size: 80%; ">
       <div class="row">
         <div class="col-md-8 m-auto">
           <div class="custom-file mb-3">
@@ -152,34 +183,22 @@
 
           <div class="row mb-3">
             <div class="col-md-3">
-              <button
-                style="background-color: black"
-                class="filter-btn vintage-add btn btn-dark btn-block"
-              >
+              <button class="btn-sm filter-btn vintage-add btn btn-dark btn-block">
                 Vintage
               </button>
             </div>
             <div class="col-md-3">
-              <button
-                style="background-color: black"
-                class="filter-btn lomo-add btn btn-dark btn-block"
-              >
+              <button class="btn-sm filter-btn lomo-add btn btn-dark btn-block">
                 Lomo
               </button>
             </div>
             <div class="col-md-3">
-              <button
-                style="background-color: black"
-                class="filter-btn clarity-add btn btn-dark btn-block"
-              >
+              <button class="btn-sm filter-btn clarity-add btn btn-dark btn-block">
                 Clarity
               </button>
             </div>
             <div class="col-md-3">
-              <button
-                style="background-color: black"
-                class="filter-btn sincity-add btn btn-dark btn-block"
-              >
+              <button class="btn-sm filter-btn sincity-add btn btn-dark btn-block">
                 Sin City
               </button>
             </div>
@@ -188,33 +207,23 @@
           <div class="row">
             <div class="col-md-3">
               <button
-                style="background-color: black"
-                class="filter-btn crossprocess-add btn btn-dark btn-block"
+                class="btn-sm filter-btn crossprocess-add btn btn-dark btn-block"
               >
                 Cross Process
               </button>
             </div>
             <div class="col-md-3">
-              <button
-                style="background-color: black"
-                class="filter-btn pinhole-add btn btn-dark btn-block"
-              >
+              <button class="btn-sm filter-btn pinhole-add btn btn-dark btn-block">
                 Pinhole
               </button>
             </div>
             <div class="col-md-3">
-              <button
-                style="background-color: black"
-                class="filter-btn nostalgia-add btn btn-dark btn-block"
-              >
+              <button class="btn-sm filter-btn nostalgia-add btn btn-dark btn-block">
                 Nostalgia
               </button>
             </div>
             <div class="col-md-3">
-              <button
-                style="background-color: black"
-                class="filter-btn hermajesty-add btn btn-dark btn-block"
-              >
+              <button class="btn-sm filter-btn hermajesty-add btn btn-dark btn-block">
                 Her Majesty
               </button>
             </div>
@@ -222,12 +231,12 @@
 
           <div class="row mt-5">
             <div class="col-md-6">
-              <button id="download-btn" class="btn btn-primary btn-block">
+              <button id="download-btn" class="btn btn-sm btn-primary btn-block">
                 Download Image
               </button>
             </div>
             <div class="col-md-6">
-              <button id="revert-btn" class="btn btn-danger btn-block">
+              <button id="revert-btn" class="btn btn-sm btn-danger btn-block">
                 Remove Filters
               </button>
             </div>
